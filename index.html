@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+		*{margin: 0;padding: 0;}
+		.bg{
+			animation: aa 4s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+			transform-style: preserve-3d;
+			transform:rotateX(0deg) rotateY(0deg);
+		}
+		.content{
+			width: 400px;
+			margin: 0 auto;
+			position: relative;
+			height: 50px;
+			transform-style: preserve-3d;
+		}
+		.above,.back{
+			animation: cs 8s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+		}
+		.left,.right{
+			animation: cs2 8s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+		}
+		.above{
+			background-color:#f0c175;
+			width: 400px;
+			height: 40px;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+		}
+		.back{
+			transform: translateZ(40px);
+			background-color: #f0c175;
+			width: 400px;
+			height: 40px;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+		}
+		.top{
+			background-color: #8a5b0f;
+			position: absolute;
+			width: 400px;
+			height: 40px;
+			transform: rotateX(90deg) translateY(20px);
+			top: -20px;
+			left: 0px;
+		}
+		.bottom{
+			background-color: #8a5b0f;
+			position: absolute;
+			width: 400px;
+			transform: rotateX(90deg) translateY(20px);
+			height: 40px;
+			top: 20px;
+			left: 0px;
+		}
+		.right{
+			position: absolute;
+			transform: rotateY(90deg) translateX(-20px);
+			top: 0px;
+			left: 380px;
+			background-color: #8a5b0f;
+			width: 40px;
+			height: 40px;
+		}	
+		.left{
+			position: absolute;
+			top: 0px;
+			transform: rotateY(90deg) translateX(-20px);
+			left: -20px;
+			background-color: #8a5b0f;
+			width: 40px;
+			height: 40px;
+		}	
+		.content:nth-of-type(1){
+			transform:rotateX(30deg) rotateY(0deg);
+		}
+		.content:nth-of-type(2){
+			transform:rotateX(25deg) rotateY(-20deg);
+		}
+		.content:nth-of-type(3){
+			transform:rotateX(20deg) rotateY(-40deg);
+		}
+		.content:nth-of-type(4){
+			transform:rotateX(15deg) rotateY(-60deg);
+		}
+		.content:nth-of-type(5){
+			transform:rotateX(10deg) rotateY(-80deg);
+		}
+		.content:nth-of-type(6){
+			transform:rotateX(5deg) rotateY(-100deg);
+		}
+		.content:nth-of-type(7){
+			transform:rotateX(0deg) rotateY(-120deg);
+		}
+		.content:nth-of-type(8){
+			transform:rotateX(-5deg) rotateY(-140deg);
+		}
+		.content:nth-of-type(9){
+			transform:rotateX(-10deg) rotateY(-160deg);
+		}
+		.content:nth-of-type(10){
+			transform:rotateX(-15deg) rotateY(-180deg);
+		}
+		.content:nth-of-type(11){
+			transform:rotateX(-20deg) rotateY(-200deg);
+		}
+		.content:nth-of-type(12){
+			transform:rotateX(-25deg) rotateY(-220deg);
+		}
+		.content:nth-of-type(13){
+			transform:rotateX(-30deg) rotateY(-240deg);
+		}
+		.content:nth-of-type(14){
+			transform:rotateX(-35deg) rotateY(-260deg);
+		}
+		.content:nth-of-type(15){
+			transform:rotateX(-40deg) rotateY(-280deg);
+		}
+		.content:nth-of-type(16){
+			transform:rotateX(-45deg) rotateY(-300deg);
+		}
+		.content:nth-of-type(17){
+			transform:rotateX(-50deg) rotateY(-320deg);
+		}
+		.content:nth-of-type(18){
+			transform:rotateX(-55deg) rotateY(-340deg);
+		}
+		@keyframes aa{
+100%{transform-origin:inherit}
+
+100%{transform:rotateX(0deg) rotateY(360deg)}
+		}
+		
+		@keyframes cs{
+			0{background-color: #f0c175;}
+			25%{background-color: #8a5b0f;}
+			50%{background-color: #f0c175;}
+			75%{background-color: #8a5b0f;}
+			100%{background-color: #f0c175;}
+		}
+		@keyframes cs2{
+			0{background-color: #8a5b0f;}
+			25%{background-color: #f0c175;}
+			50%{background-color: #8a5b0f;}
+			75%{background-color: #f0c175;}
+			100%{background-color: #8a5b0f;}
+		}
+		</style>
+	</head>
+	<body>
+		<div class="bg">
+		<div class="content" style="margin-top: 50px;">
+			<div class="bottom"></div><!--下-->
+			<div class="back"></div><!--后-->
+			<div class="left"></div><!--左-->
+			<div class="top"></div><!--上-->
+			<div class="above"></div><!--前-->
+			<div class="right"></div><!--右-->
+		</div>
+		<div class="content">
+			<div class="bottom"></div><!--下-->
+			<div class="back"></div><!--后-->
+			<div class="left"></div><!--左-->
+			<div class="top"></div><!--上-->
+			<div class="above"></div><!--前-->
+			<div class="right"></div><!--右-->
+		</div>
+		<div class="content">
+			<div class="bottom"></div><!--下-->
+			<div class="back"></div><!--后-->
+			<div class="left"></div><!--左-->
+			<div class="top"></div><!--上-->
+			<div class="above"></div><!--前-->
+			<div class="right"></div><!--右-->
+		</div>
+		<div class="content">
+			<div class="bottom"></div><!--下-->
+			<div class="back"></div><!--后-->
+			<div class="left"></div><!--左-->
+			<div class="top"></div><!--上-->
+			<div class="above"></div><!--前-->
+			<div class="right"></div><!--右-->
+		</div>
+		<div class="content">
+			<div class="bottom"></div><!--下-->
+			<div class="back"></div><!--后-->
+			<div class="left"></div><!--左-->
+			<div class="top"></div><!--上-->
+			<div class="above"></div><!--前-->
+			<div class="right"></div><!--右-->
+		</div>
+		<div class="content">
+			<div class="bottom"></div><!--下-->
+			<div class="back"></div><!--后-->
+			<div class="left"></div><!--左-->
+			<div class="top"></div><!--上-->
+			<div class="above"></div><!--前-->
+			<div class="right"></div><!--右-->
+		</div>
+		<div class="content">
+			<div class="bottom"></div><!--下-->
+			<div class="back"></div><!--后-->
+			<div class="left"></div><!--左-->
+			<div class="top"></div><!--上-->
+			<div class="above"></div><!--前-->
+			<div class="right"></div><!--右-->
+		</div>
+		<div class="content">
+			<div class="bottom"></div><!--下-->
+			<div class="back"></div><!--后-->
+			<div class="left"></div><!--左-->
+			<div class="top"></div><!--上-->
+			<div class="above"></div><!--前-->
+			<div class="right"></div><!--右-->
+		</div>
+		<div class="content">
+			<div class="bottom"></div><!--下-->
+			<div class="back"></div><!--后-->
+			<div class="left"></div><!--左-->
+			<div class="top"></div><!--上-->
+			<div class="above"></div><!--前-->
+			<div class="right"></div><!--右-->
+		</div>
+		<div class="content">
+			<div class="bottom"></div><!--下-->
+			<div class="back"></div><!--后-->
+			<div class="left"></div><!--左-->
+			<div class="top"></div><!--上-->
+			<div class="above"></div><!--前-->
+			<div class="right"></div><!--右-->
+		</div>
+		<div class="content">
+			<div class="bottom"></div><!--下-->
+			<div class="back"></div><!--后-->
+			<div class="left"></div><!--左-->
+			<div class="top"></div><!--上-->
+			<div class="above"></div><!--前-->
+			<div class="right"></div><!--右-->
+		</div>
+		<div class="content">
+			<div class="bottom"></div><!--下-->
+			<div class="back"></div><!--后-->
+			<div class="left"></div><!--左-->
+			<div class="top"></div><!--上-->
+			<div class="above"></div><!--前-->
+			<div class="right"></div><!--右-->
+		</div>
+		<div class="content">
+			<div class="bottom"></div><!--下-->
+			<div class="back"></div><!--后-->
+			<div class="left"></div><!--左-->
+			<div class="top"></div><!--上-->
+			<div class="above"></div><!--前-->
+			<div class="right"></div><!--右-->
+		</div>
+		<div class="content">
+			<div class="bottom"></div><!--下-->
+			<div class="back"></div><!--后-->
+			<div class="left"></div><!--左-->
+			<div class="top"></div><!--上-->
+			<div class="above"></div><!--前-->
+			<div class="right"></div><!--右-->
+		</div>
+		<div class="content">
+			<div class="bottom"></div><!--下-->
+			<div class="back"></div><!--后-->
+			<div class="left"></div><!--左-->
+			<div class="top"></div><!--上-->
+			<div class="above"></div><!--前-->
+			<div class="right"></div><!--右-->
+		</div>
+		<div class="content">
+			<div class="bottom"></div><!--下-->
+			<div class="back"></div><!--后-->
+			<div class="left"></div><!--左-->
+			<div class="top"></div><!--上-->
+			<div class="above"></div><!--前-->
+			<div class="right"></div><!--右-->
+		</div>
+		<div class="content">
+			<div class="bottom"></div><!--下-->
+			<div class="back"></div><!--后-->
+			<div class="left"></div><!--左-->
+			<div class="top"></div><!--上-->
+			<div class="above"></div><!--前-->
+			<div class="right"></div><!--右-->
+		</div>
+		<div class="content">
+			<div class="bottom"></div><!--下-->
+			<div class="back"></div><!--后-->
+			<div class="left"></div><!--左-->
+			<div class="top"></div><!--上-->
+			<div class="above"></div><!--前-->
+			<div class="right"></div><!--右-->
+		</div>
+		</div>
+	</body>
+</html>
